@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script type="text/javascript" src="analysis.js"></script>
+    </head>
+    <body>
+        <div>
+            <span>USER NAME : </span>
+            <input type="text" id="invokeUser" />
+            <button onclick="monitorList()">MONITOR START</button>
+        </div>
+        <div>
+            <input type="text" id="algorithm" value="a1" />
+        </div>
+        <div>
+            <span>ID : </span>
+            <input type="number" id="id" step="1" />
+            <button onclick="addAnalysis()">UNIT START</button>
+        </div>
+        <div>
+            <input type="number" id="id-s" step="1" value="1" />
+            <input type="number" id="id-e" step="1" value="1" />
+            <button onclick="addBulkAnalysis()">BULK START</button>
+        </div>
+        <div class="analysis-list"></div>
+        <style>
+            .step-0 {
+                color: tomato;
+            }
+            .step-1 {
+                color: goldenrod;
+            }
+            .step-2 {
+                color: blueviolet;
+            }
+            .step-3 {
+                color: #18a118;
+            }
+        </style>
+    </body>
+</html>
